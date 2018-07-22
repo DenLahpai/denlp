@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #A5A6A5;
+}
+
+.content {
+    background: white;
+}
+
+.homePage h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: MathJax_Caligraphic;
+}
+
+.homePage.title p {
+    margin-top: 6px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.homePage-menu {
+    margin-top: 12px;
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 1fr;
+    padding: 3px;
+}
+
+.homePage-menu.item {
+    display: block;
+    justify-content: center;
+    border: 2px solid silver;
+    text-align: center;
+}
+
+.homePage-menu.item:hover {
+    background: #D7DAE0;
+}
+
+.homePage-menu.item h3 {
+
+}
+
+.homePage-menu.item img{
+    border-radius: 50%;
+    border: 6px solid gold;
+    width: 120px;
+}
+
+.homePage-menu.item ul li {
+    list-style: none;
+}
+
+.homePage-menu.item ul li a {
+    color: #009f00;
+    font-weight: bold;
+}
+
+.homePage-menu.item ul li a:hover {
+    color: #01CFFF;
+}
+
+footer p {
+    margin-top: 6px;
+    text-align: center;
+    color: white;
+}
+
+/* styles for tablets */
+@media screen and (min-width: 786) {
+    .homePage-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* styles for computers */
+@media screen and (min-width: 992px) {
+    .homePage h1 {
+        padding-top: 120px;
+    }
+
+    .homePage-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
